@@ -11,6 +11,8 @@ spec:
       metricSelector:
         matchLabels:
           resource.labels.subscription_id: echo-read
+          // you can use metrics from a different project by adding a project_id metric selector
+          // resource.labels.project_id=[PROJECT_ID]
       targetAverageValue: "2"
     type: External
   scaleTargetRef:
